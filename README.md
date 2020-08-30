@@ -11,9 +11,23 @@ As a result default Dark theme...
 
 ![](images/demo_old.png)
 
-...will look like this one.  Enjoy!
+...will look like this one.  
 
 ![](images/demo_new.png)
+
+Enjoy!
+
+# How is it working?
+
+When page is loaded.  Extentsion adds new style tag after the `<body />`.  New styles override colors with `!important` rule.
+
+For example:
+
+```css
+.fxs-mode-dark .fxs-portal-bg-txt-br  {
+	background-color: #242424 !important;
+}
+```
 
 # Contributing
 
